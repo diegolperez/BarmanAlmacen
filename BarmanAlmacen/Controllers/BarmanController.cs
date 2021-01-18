@@ -11,5 +11,10 @@ namespace BarmanAlmacen.Controllers
     [ApiController]
     public class BarmanController : ControllerBase
     {
+        [HttpGet]
+        public dynamic Get()
+        {
+            return "Hola mundo";
+        }
     }
 }
