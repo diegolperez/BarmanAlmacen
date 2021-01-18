@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RenanN\\source\\repos\\BarmanAlmacen\\BarmanAlmacen\\BarmanAlmacen.csproj": {}
+    "C:\\Users\\USER\\Desktop\\Prestashop\\source\\repos\\BarmanAlmacen\\BarmanAlmacen\\BarmanAlmacen.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RenanN\\source\\repos\\BarmanAlmacen\\BarmanAlmacen\\BarmanAlmacen.csproj": {
+    "C:\\Users\\USER\\Desktop\\Prestashop\\source\\repos\\BarmanAlmacen\\BarmanAlmacen\\BarmanAlmacen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RenanN\\source\\repos\\BarmanAlmacen\\BarmanAlmacen\\BarmanAlmacen.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\Prestashop\\source\\repos\\BarmanAlmacen\\BarmanAlmacen\\BarmanAlmacen.csproj",
         "projectName": "BarmanAlmacen",
-        "projectPath": "C:\\Users\\RenanN\\source\\repos\\BarmanAlmacen\\BarmanAlmacen\\BarmanAlmacen.csproj",
-        "packagesPath": "C:\\Users\\RenanN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RenanN\\source\\repos\\BarmanAlmacen\\BarmanAlmacen\\obj\\",
+        "projectPath": "C:\\Users\\USER\\Desktop\\Prestashop\\source\\repos\\BarmanAlmacen\\BarmanAlmacen\\BarmanAlmacen.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\Prestashop\\source\\repos\\BarmanAlmacen\\BarmanAlmacen\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\RenanN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,18 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -32,15 +32,15 @@ namespace BarmanAlmacen.Controllers
             int[,] baldes = new int[3, 3]; //No se si sobrepasamos el tamaño?
             int[] precios = new int[3];
             int[] baldesq = new int[3];
-            baldes[0,0] = 20;
-            baldes[0,1] = 30;
-            baldes[0,2] = 50;
-            baldes[1,0] = 30;
-            baldes[1,1] = 20;
-            baldes[1,2] = 60;
-            baldes[2,0] = 30;
-            baldes[2,1] = 30;
-            baldes[2,2] = 32;
+            baldes[0, 0] = 20;
+            baldes[0, 1] = 30;
+            baldes[0, 2] = 50;
+            baldes[1, 0] = 30;
+            baldes[1, 1] = 20;
+            baldes[1, 2] = 60;
+            baldes[2, 0] = 30;
+            baldes[2, 1] = 30;
+            baldes[2, 2] = 32;
 
             precios[0] = 5;
             precios[1] = 45;
@@ -51,7 +51,7 @@ namespace BarmanAlmacen.Controllers
             baldesq[1] = 4;
             baldesq[2] = 5;
 
-            int[] baldexConst = new int[3]; 
+            int[] baldexConst = new int[3];
             int[] totalBalde = new int[3];
             int totalFinBalde = 0;
 
@@ -61,13 +61,27 @@ namespace BarmanAlmacen.Controllers
                 totalBalde[f] = 0;
                 for (int c = 0; c < 3; c++)
                 {
-                    totalBalde[f] += baldes[f, c] * precios[f]; 
+                    totalBalde[f] += baldes[f, c] * precios[f];
                 }
                 baldexConst[f] = totalBalde[f] * baldesq[f];
                 totalFinBalde += baldexConst[f];
             }
 
             return totalFinBalde;
+        }
+        [HttpGet("{$id}")]
+        public string Get(int id)
+        {
+            int[] numeros = { 5, 1, 6, 2 };
+            Array.Sort(numeros);
+            int maximo = numeros.Max();
+            int minimo = numeros.Min();
+            int suma = numeros.Sum();
+
+            string conca = "Maximo: " + maximo + " Mínimo: " + minimo + " Suma de elementos: " + suma;
+
+            return conca;
+
         }
     }
 }
